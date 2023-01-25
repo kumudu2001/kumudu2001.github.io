@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+  <div class="container">
+<nav>
+    <ul>
+    <li><a href="#"><b>Home</b></a></li>
+    <li><a href="#"><b>About</b></a></li>
+    <li><a href="#"><b>Portfolio</b></a></li>
+    <li><a href="#"><b>Contact</b></a></li>
+</ul>
+</nav>
+<div class="header-text">
+   <br><br>
+    <h1><span>HELLO! EVERYONE<br>
+        I’M KUMUDU WICKRAMASINGHE</span></h1>
+    </div>
+  </div>
+  </div>
+ 
+ <!-- -------About-------- -->
+ <div id="About">
+<div class="container">
+<div class="row">
+<div class="About-col-1">
+    <img src="images/mypic.svg" width="900" height="700">
+</div>
+<div class="About-col-2">
+    <h1 class="sub-title"><center>About Me</center></h1><br><br>
+    <p>I am a graduate in the University of Colombo School of Computing 
+        following the Information Systems Degree.<br><br>
+        
+        To be acknowledged for both being an employee and making a substantial 
+        
+        contribution to the performance and efficiency of the company. <br>Overall, 
+        
+        have an effect on the performance of the firm while upholding the highest 
+        
+        standards of ethics and customer service. </p><br><br>
+        <ul>
+            <li>Name: Kumudu Wickramasinghe.</li><br>
+
+
+                <li>Birthday: 26th May 2001</li><br>
+                
+                
+                <li>Age: 21 y/o</li><br>
+                
+                
+                <li> Address: Bandarawela, Sri Lanka</li><br>
+                
+                
+                <li> University: University of Colombo</li><br>
+                
+                
+                <li>Email: kumudwickramasinghe@gmail.com</li><br>
+        </ul>
+       <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+<p class="tab-links"onclick="opentab('Experience')"> Experience</p>
+<p class="tab-links"onclick="opentab('Education')"> Education</p>
+       </div> 
+       <div class="tab-contents active-tab" id="Skills">
+        <ul>
+            <li><span>UI/UX</span><br>Designing web app interfaces</li>
+            <li><span>Web Development</span><br>Web app Development</li>
+            <li><span>App Development</span><br>Building Android/ios app</li>
+        </ul>
+       </div>
+
+       <div class="tab-contents" id="Experience">
+        <ul>
+            <li><span> 2021</span>  one year work experience in Dialog Company Colombo,Sri Lanka</li><br><br>
+            <li><span>2022</span>  Two Year work experience in Software Company in Colombo</li>
+        </ul>
+       </div>
+
+       <div class="tab-contents" id="Education">
+        <ul>
+            <li><span> 2017</span>  General Certificate of Education Ordinary Level Examination <br><br>
+ 
+
+                <span> 2020</span>  General Certificate of Education Advanced Level Examination in Art Stream 2020</li><br>
+            
+                Successfully completed,<br>
+                <li><span> 2020</span>  Diploma in Information Technology at SITC Campus, Sri Lanka<br>
+                <li><span> 2021</span>  Diploma in English Language at Sabaragamuwa University of Sri Lanka</li>
+
+        </ul>
+       </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- contact-->
+
+<div id="contact">
+    <img align="left" src="images/con.jpg">
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <center><h1 class="sub-title"> Contact Me</h1></center>
+       
+            <center><p>Email: kumudwickramasinghe@gmail.com</p></center>
+            <center><p>Call me: +940711234455</p></center><br><br>
+        </div>
+        
+        </div>
+        <a href="images/mycv.pdf.pdf"  download class="btn btn2"><b>Click to view my CV</b></a>
+            <div class="contact-right"></div>
+            <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+  
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+</script>
+</body>
+</html>
+</html>
